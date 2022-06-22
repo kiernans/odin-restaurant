@@ -1,0 +1,73 @@
+:root {
+    --body-background-color: green;
+    --content-background-color: rgb(228, 228, 15);
+    --main-background-color: #2ed113;
+}
+
+body,
+html {
+    height: 100%;
+    background-color: var(--body-background-color);
+    background-image: url(./images/kld-Taco-Bout-Cute_final.svg);
+}
+
+.content {
+    display: flex;
+    position: relative;
+    left: 470px;
+    border-radius: 110px;
+    padding: 45px;
+    width: 50%;
+    height: 100%;
+    background-color: var(--content-background-color);
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px 4px black;
+}
+
+.tabs button {
+    border: none;
+    background-color: var(--body-background-color);
+    color: white;
+    height: 35px;
+    width: 120px;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 20px 0px rgb(46 44 29);    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    color: #005a00;
+    width: 50%;
+    align-items: center;
+}
+
+div.card {
+    width: 20rem;
+    padding: 45px;
+    border-radius: 50px;
+    box-shadow: inset 1px 1px 3px 5px #005a00;
+    font-size: 20px;
+}
+
+div.title {
+    display: flex;
+    width: 40rem;
+    margin: 6px;
+    font-size: 42px;
+}
+
+div.subtitle {
+    position: relative;
+    bottom: 60px;
+    left: 100px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 285px;
+}
