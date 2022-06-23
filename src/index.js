@@ -1,6 +1,7 @@
 import './style.css';
 import MainPage from './home';
-import { ContextReplacementPlugin } from 'webpack';
+import Menu from './menu';
+import Contact from './contact';
 
 
 const removeDOM = () => {
