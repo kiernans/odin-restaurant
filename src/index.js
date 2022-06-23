@@ -20,8 +20,13 @@ const addListeners = () => {
         });
     });
 };
+const createContainer = () => {
+    const container = document.createElement('div');
+    container.classList.add('content');
+    document.body.appendChild(container);
+};
 
-
+createContainer();
 MainPage.createTabs();
 MainPage.displayPage();
 addListeners();
