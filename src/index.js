@@ -1,12 +1,31 @@
 import './style.css';
 import MainPage from './home';
+import { ContextReplacementPlugin } from 'webpack';
 
-MainPage.displayPage();
 
 const removeDOM = () => {
-    const content = document.querySelector('.content');
-
-    while(content.lastChild) {
-        content.remove(lastChild);
-    }
+    const main = document.querySelector('.main');
+    main.remove();
 };
+
+const addListeners = () => {
+    const tabs = document.querySelectorAll('.tabs button');
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            if(document.querySelector('.main')) removeDOM();
+            if(tab.textContent === 'Home') MainPage.displayPage();
+            if(tab.textContent === 'Menu') Menu.displayPage();
+            if(tab.textContent === 'Contact') Contact.displayPage(); 
+        });
+    });
+};
+
+
+MainPage.createTabs();
+MainPage.displayPage();
+addListeners();
+
+
+
+
+

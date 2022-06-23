@@ -90,7 +90,6 @@ const MainPage = (() => {
     };
 
     const displayPage = () => {
-        createTabs();
         createMain();
         createTitle();
         createSubTitle();
@@ -100,6 +99,7 @@ const MainPage = (() => {
     
     return {
         displayPage,
+        createTabs,
     }
 })();
 
